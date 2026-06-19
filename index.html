@@ -15,47 +15,71 @@
 
 <body>
 
-    <header class="cabecera">
-        <h1 class="titulo">Esto no es un servicio online real!</h1>
-        <p class="descripcion">Pero, si quieres que esto sea un servicio creado por ti y diseñado a tu gusto
-            <br>
-            registrate y cumple tus sueños!
-        </p>
-    </header>
+    <article class="contenedorPrincipal">
 
-    <div class="contenedorImagen">
+        <div class="contenedorSecundario">
+            <header class="cabecera">
+                <h1 class="titulo">Esto no es un servicio online real!</h1>
+                <p class="descripcion">Pero, si quieres que esto sea un servicio creado por ti y diseñado a tu gusto
+                    <br>
+                    registrate y cumple tus sueños!
+                </p>
+            </header>
 
-    </div>
+            <form action="" class="formulario">
 
-    <form action="" class="formulario">
-        <fieldset>
-            <legend>Continuemos!</legend>
+                <fieldset class="contenedorFormulario">
+                    <p>Continuemos!</p>
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="John..." required>
+                    </div>
 
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="John...">
+                    <div class="campo">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Doe...">
+                    </div>
 
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" placeholder="Doe...">
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="correo@correo.com" required>
+                    </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="correo@correo.com">
+                    <div class="campo">
+                        <label for="telefono">Numero de telefono</label>
+                        <input type="tel" id="telefono" placeholder="3322556677" required>
+                    </div>
 
-            <label for="telefono">Numero de telefono</label>
-            <input type="tel" id="telefono" placeholder="3322556677">
+                    <div class="campo">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña" required>
+                    </div>
 
-            <label for="contraseña">Contraseña</label>
-            <input type="password" id="contraseña">
+                    <div class="campo">
+                        <label for="confirmar">Confirme su contraseña</label>
+                        <input type="password" id="confirmar" required>
+                    </div>
 
-            <label for="confirmar">Confirme su contraseña</label>
-            <input type="password" id="confirmar">
+                    <div class="alerta"></div>
 
-            <input type="submit" value="Crear Cuenta">
-        </fieldset>
-    </form>
+                </fieldset>
+                <input class="boton" type="submit" value="Crear Cuenta">
+            </form>
+            <p class="iniciarSesion">¿Ya tienes una cuenta? <a href="#">Ingresa aquí</a></p>
+        </div>
 
-    <p>¿Ya tienes una cuenta? <a href="#">Ingresa aquí</a></p>
+        <div class="contenedorImagen">
+            <img class="imagen" src="./img/michael-baccin-sUYFMV0TOYA-unsplash.jpg" alt="imagen-fondo">
+
+            <div class="logo">
+                <img class="odin" src="./img/odin-lined.png" alt="logo-odin-project">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+    </article>
 
 
+    <script src="./js/scrip.js"></script>
 </body>
 
 </html>
